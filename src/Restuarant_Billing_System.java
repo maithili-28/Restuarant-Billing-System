@@ -64,6 +64,9 @@ class Restuarant_Billing_System{
                     System.out.println("Vanilla Shake");
                     price = 200;
                     break;
+                default:
+                    System.out.println("Invalid choice");
+                    break;
             }
 
             System.out.println("Enter quantity: ");
