@@ -69,19 +69,26 @@ class Restuarant_Billing_System{
                     break;
             }
 
-            System.out.println("Enter quantity: ");
-            quantity = sc.nextInt();
-            System.out.println("Quantity: " + quantity);
+            if(craving_no>=1 && craving_no<=9) {
 
-            System.out.println("-----------------Bill-----------------");
-            total = total + (price * quantity);
-            System.out.println("Total Happiness: " + total);
+                System.out.println("Enter quantity: ");
+                quantity = sc.nextInt();
+                System.out.println("Quantity: " + quantity);
+
+                System.out.println("-----------------Bill-----------------");
+                total = total + (price * quantity);
+                System.out.println("Total Happiness: " + total);
+            }
 
             System.out.println("Anything more to be added to your tummy");
             System.out.println("Choose from below options: ");
             System.out.println("1. Yes");
             System.out.println("2. No");
             more = sc.nextInt();
+
+            if(more==2){
+                System.out.println("Thank you for coming! ");
+            }
 
         }
 
